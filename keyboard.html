@@ -5,44 +5,24 @@
         <link rel="stylesheet" href="style.css">
 
     </head>
-    <body>
-        <input id="inputField" type="text">
+    <body id="h3">
+        <input id="inputField" type="text" onkeydown="myFunction">
         <header>
-            <h1>
-                <button class="button">Esc</button>
-                <button class="button">F1</button>
-                <button class="button">F2</button>
-                <button class="button">F3</button>
-                <button class="button">F4</button>
-                <button class="button">F5</button>
-                <button class="button">F6</button>
-                <button class="button">F7</button>
-                <button class="button">F8</button>
-                <button class="button">F9</button>
-                <button class="button">F10</button>
-                <button class="button">F11</button>
-                <button class="button">F12</button>
-                <button class="button">PrtSc</button>
-                <button class="button">Scroll<br>Lock</button>
-                <button class="button">Pause<br>Break</button>
-                <button class="button">Insert</button>
-                <button class="button" >Delete</button>
-            </h1>
             <h2>
-                <button class="button">~<br>`</button>
-                <button class="button">!<br>1</button>
-                <button class="button">@<br>2</button>
-                <button class="button">#<br>3</button>
-                <button class="button">$<br>4</button>
-                <button class="button">%<br>5</button>
-                <button class="button">^<br>6</button>
-                <button class="button">&<br>7</button>
-                <button class="button">*<br>8</button>
-                <button class="button">(<br>9</button>
-                <button class="button">)<br>0</button>
+                <button class="button">~</button>
+                <button class="button">!</button>
+                <button class="button">@</button>
+                <button class="button">#</button>
+                <button class="button">$</button>
+                <button class="button">%</button>
+                <button class="button">^</button>
+                <button class="button">&</button>
+                <button class="button">*</button>
+                <button class="button">(</button>
+                <button class="button">)</button>
                 <button class="button">-<br></button>
                 <button class="button">+<br>=</button>
-                <button class="button" id="delete">Delete</button>
+                <button class="button">Backspace</button>
                 <button class="button">Home</button>
                 <button class="button">Num<br>Lock</button>
                 <button class="button">/</button>
@@ -51,16 +31,16 @@
             </h2>
             <h3>
                 <button class="button">Tab</button>
-                <button class="button" value="q" onclick="printLetter(this)">Q</button>
-                <button class="button" value="w" onclick="printLetter(this)">W</button>
-                <button class="button" value="e" onclick="printLetter(this)">E</button>
-                <button class="button" value="r" onclick="printLetter(this)">R</button>
-                <button class="button" value="t" onclick="printLetter(this)">T</button>
-                <button class="button" value="y" onclick="printLetter(this)">Y</button>
-                <button class="button" value="u" onclick="printLetter(this)">U</button>
-                <button class="button" value="i" onclick="printLetter(this)">I</button>
-                <button class="button" value="o" onclick="printLetter(this)">O</button>
-                <button class="button" value="p" onclick="printLetter(this)">P</button>
+                <button class="button" id="b">Q</button>
+                <button class="button" id="b">W</button>
+                <button class="button" id="b">E</button>
+                <button class="button" id="b">R</button>
+                <button class="button" id="b">T</button>
+                <button class="button" id="b">Y</button>
+                <button class="button" id="b">U</button>
+                <button class="button" id="b">I</button>
+                <button class="button" id="b">O</button>
+                <button class="button" id="b">P</button>
                 <button class="button">{</button>
                 <button class="button">}</button>
                 <button class="button">\</button>
@@ -71,16 +51,16 @@
                 <button class="button">+</button>
             </h3>
             <h4>
-                <button class="button" id="upper_case">Caps Lock</button>
-                <button class="button" value="a" onclick="printLetter(this)">A</button>
-                <button class="button" value="s" onclick="printLetter(this)">S</button>
-                <button class="button" value="d" onclick="printLetter(this)">D</button>
-                <button class="button" value="f" onclick="printLetter(this)">F</button>
-                <button class="button" value="g" onclick="printLetter(this)">G</button>
-                <button class="button" value="h" onclick="printLetter(this)">H</button>
-                <button class="button" value="j" onclick="printLetter(this)">J</button>
-                <button class="button" value="k" onclick="printLetter(this)">K</button>
-                <button class="button" value="l" onclick="printLetter(this)">L</button>
+                <button class="button" >Caps Lock</button>
+                <button class="button" value="a">A</button>
+                <button class="button" value="s">S</button>
+                <button class="button" value="d" >D</button>
+                <button class="button" value="f" >F</button>
+                <button class="button" value="g" >G</button>
+                <button class="button" value="h" >H</button>
+                <button class="button" value="j">J</button>
+                <button class="button" value="k" >K</button>
+                <button class="button" value="l" >L</button>
                 <button class="button">;</button>
                 <button class="button">"</button>
                 <button class="button">Enter</button>
@@ -90,15 +70,15 @@
                 <button class="button">6</button>
             </h4>
             <h5>
-                <button class="button">Shift</button>
+                <button class="button" >Shift</button>
                 <button class="button">\</button>
-                <button class="button" value="z" onclick="printLetter(this)">Z</button>
-                <button class="button" value="x" onclick="printLetter(this)">X</button>
-                <button class="button" value="c" onclick="printLetter(this)">C</button>
-                <button class="button" value="v" onclick="printLetter(this)">V</button>
-                <button class="button" value="b" onclick="printLetter(this)">B</button>
-                <button class="button" value="n" onclick="printLetter(this)">N</button>
-                <button class="button" value="m" onclick="printLetter(this)">M</button>
+                <button class="button" >Z</button>
+                <button class="button" >X</button>
+                <button class="button" >C</button>
+                <button class="button" >V</button>
+                <button class="button" >B</button>
+                <button class="button" >N</button>
+                <button class="button" >M</button>
                 <button class="button">,</button>
                 <button class="button">:</button>
                 <button class="button">?<br>/</button>
@@ -115,7 +95,7 @@
                 <button class="button">Fn</button>
                 <button class="button">⍟</button>
                 <button class="button">Alt</button>
-                <button class="button" id="space">Space</button>
+                <button class="button">Space</button>
                 <button class="button">Alt</button>
                 <button class="button">Menu</button>
                 <button class="button">Ctrl</button>
@@ -127,7 +107,7 @@
             </h6>
         </header>
         <script src="working_logic.js" >
-            
+      
          </script>
     </body>
 </html>

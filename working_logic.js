@@ -1,37 +1,18 @@
-const inputField = document.getElementById("inputField");
-const button = document.getElementsByClassName("button");
-document.getElementById("delete").addEventListener("click", deleteLastLetter);
-document.getElementById("space").addEventListener("click", spacing);
-const upperCase = document.getElementById("upper_case").addEventListener("click", testing);
+const textInput = document.getElementById('inputField');
+document.getElementById('h3').addEventListener('keydown', myFunction);
 
-let upperCaseArray = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-
-function printLetter(button){
-    myArray = [button.value];
-    for(let i = 0; i < myArray.length; i++){
-        inputField.value += myArray[i];
+function myFunction(event) {
+    let key = event.key;
+    textInput.value += key;
+    if(key == 'Backspace'){
+        let currentValue = textInput.value;
+        textInput.value = currentValue.slice(0, -10);
+    }
+    if(key == 'CapsLock'){
+        let fieldValue = textInput.value;
+        textInput.value = fieldValue.slice(0, -8);
     }
 }
 
-function deleteLastLetter() {
-    let currentValue = inputField.value;
-    inputField.value = currentValue.slice(0, -1);
-}
-
-function spacing(){
-    let spaceValue = " ";
-    inputField.value += spaceValue;
-}
-
-function testing(button){
-    let upperCaseArray = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-    let myChoice = button.value;
-    for(let i = 0; i < upperCaseArray.length; i++){
-        if(myChoice == upperCaseArray[i]){
-            alert(upperCaseArray[i]);
-        }
-
-    }
-}
 
 
