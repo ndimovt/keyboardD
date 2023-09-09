@@ -1,0 +1,19 @@
+#caps{
+    background-color: yellow;
+}
+.button{
+    height: 50px;
+    width: 50px;
+    border-radius: 9px;
+    background-color:gray;
+    color: white;
+}
+.blink {
+    animation: blink 0.5s linear;
+    background: lightgrey;
+}
+#inputField{
+    height: 25px;
+    width: 570px;
+
+}
