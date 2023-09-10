@@ -1,5 +1,5 @@
 #caps{
-    background-color: yellow;
+    width: 80px;
 }
 .button{
     height: 50px;
@@ -15,5 +15,39 @@
 #inputField{
     height: 25px;
     width: 570px;
-
 }
+#tab{
+    width: 70px;
+}
+#shift{
+    width: 62px;
+}
+#space{
+    width: 187px;
+}
+#backspace{
+    width: 75px;
+}
+#enter{
+    width: 105px;
+}
+#hero{
+    display: block;
+}
+#note{
+    width: 300px;
+    height: 300px;
+    background-color: pink;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: block;
+}
+#text{
+    font-style: italic;
+    font-size: large;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
